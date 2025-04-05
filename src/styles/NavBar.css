@@ -1,0 +1,49 @@
+.custom-navbar {
+  background-color: rgba(17, 24, 39, 0.9);
+  padding: 1rem 0;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.custom-navbar.scrolled {
+  background-color: rgba(17, 24, 39, 0.98);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(45deg, #00bcd4, #1de9b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: brandGradient 5s linear infinite;
+}
+
+@keyframes brandGradient {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #00bcd4 !important;
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #1de9b6 !important;
+}

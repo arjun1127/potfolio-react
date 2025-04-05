@@ -1,0 +1,90 @@
+.skills-section {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  animation: fadeIn 1s ease-in;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #00bcd4, #8e44ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.circular-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease-out;
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+}
+
+.progress-circle .bg {
+  fill: none;
+  stroke: #334155;
+  stroke-width: 10;
+}
+
+.progress-circle .progress {
+  fill: none;
+  stroke: url(#gradient-stroke);
+  stroke-width: 10;
+  stroke-dasharray: 314; /* 2 * π * r = 2 * π * 50 */
+  stroke-dashoffset: 314;
+  transition: stroke-dashoffset 1s ease;
+  stroke-linecap: round;
+}
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  color: #00bcd4;
+  transition: transform 0.3s ease;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+  color: #8e44ad;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
