@@ -38,7 +38,7 @@ const webDevProjects = [
     title: "Appoint Vaidhy",
     description: "A web application for booking appointments with doctors.",
     image: hosp_app,
-    link: "https://hospital-online-appointment-3ieit4ups.vercel.app/"
+    link: "https://hospital-online-appointment.vercel.app/"
   }
 ];
 
